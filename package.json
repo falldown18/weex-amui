@@ -1,12 +1,12 @@
 {
-  "name": "weex-amui",
-  "version": "0.1.4",
+  "name": "weex-amui-mod",
+  "version": "0.0.1",
   "main": "index.js",
   "description": "Ant Design Mobile of Weex",
-  "author": "minghe",
+  "author": "falldown18",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hminghe/weex-amui.git"
+    "url": "git+https://github.com/falldown18/weex-amui.git"
   },
   "files": [
     "packages",
