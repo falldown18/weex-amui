@@ -35,8 +35,8 @@
 | ---- |:----|:---|:-------|:----------|
 | **`value`** | `String` | `Y` | `null` | 当前选中时间，格式对应 `format`, 可以使用 `v-model` |
 | **`format`** | `String` | `N` | `YYYY-MM-DD HH:mm` | 时间格式 [注1] |
-| **`minDate`** | `String` | `N` | `2000-01-01` | 最小可选日期，只支持年月日，固定格式 `YYYY-MM-DD` |
-| **`maxDate`** | `String` | `N` | `2030-12-31` | 最大可选日期，只支持年月日，固定格式 `YYYY-MM-DD` |
+| **`minDate`** | `String` | `N` | `2000-01-01 00:00` | 最小可选日期，支持年月日时分，固定格式 `YYYY-MM-DD HH:mm` |
+| **`maxDate`** | `String` | `N` | `2099-12-31 23:59` | 最大可选日期，支持年月日时分，固定格式 `YYYY-MM-DD HH:mm` |
 | **`hourList`** | `Array` | `N` | `null` | 可选的小时列表，数组格式：`[2, 7, 9, 12]`，不设置为0到23时。 |
 | **`minuteStep`** | `Number` | `N` | `1` | 分钟数递增步长设置 |
 | **`formatYear`** | `String` | `N` | `{value}` | 年份的渲染模板 |

@@ -1,9 +1,9 @@
-# Weex-AMUI
+# Weex-AMUI-Mod
 
 
 ## 安装
 ```shell
-npm i weex-amui -S
+npm i weex-amui-mod -S
 ```
 
 ## 使用
@@ -18,7 +18,7 @@ npm i weex-amui -S
 </template>
 
 <script>
-  import { AmButton } from 'weex-amui';
+  import { AmButton } from 'weex-amui-mod';
 
   export default {
     components: { AmButton },
@@ -49,7 +49,7 @@ npm i babel-preset-stage-0 babel-plugin-component  -D
     [
       "component",
       {
-        "libraryName": "weex-amui",
+        "libraryName": "weex-amui-mod",
         "libDir": "packages",
         "style": false
       }
@@ -77,7 +77,7 @@ npm i https://github.com/HMingHe/weex-vue-precompiler.git -D
   "plugins": [
     ["import",[
       {
-        "libraryName": "weex-amui",
+        "libraryName": "weex-amui-mod",
         "libraryDirectory": "packages",
         "style": false
       }
@@ -99,3 +99,4 @@ npm run start
 [Ant Design Mobile](https://mobile.ant.design/)
 [weex-ui](https://github.com/alibaba/weex-ui)
 [weex-flymeui](https://github.com/FlymeApps/weex-flymeui)
+[weex-amui](https://github.com/hminghe/weex-amui)
