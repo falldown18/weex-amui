@@ -10,11 +10,11 @@ export default function () {
     },
     minDate: {
       type: String,
-      default: '2000-01-01'
+      default: '2000-01-01 00:00'
     },
     maxDate: {
       type: String,
-      default: '2030-12-31'
+      default: '2099-12-31 23:59'
     },
     hourList: {
       type: Array,

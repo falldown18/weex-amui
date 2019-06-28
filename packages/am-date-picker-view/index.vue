@@ -48,10 +48,24 @@ export default {
       return config
     },
     hourConfig () {
-      return {start: 0, end: 23, fixedList: this.hourList || null}
+      const config = {start: 0, end: 23, fixedList: this.hourList || null}
+      if (this.currentValue.Year === this.minDateMap.Year && this.currentValue.Month === this.minDateMap.Month && this.currentValue.Day === this.minDateMap.Day) {
+        config.start = this.minDateMap.Hour
+      }
+      if (this.currentValue.Year === this.maxDateMap.Year && this.currentValue.Month === this.maxDateMap.Month && this.currentValue.Day === this.maxDateMap.Day) {
+        config.end = this.maxDateMap.Hour
+      }
+      return config
     },
     minuteConfig () {
-      return {start: 0, end: 59, step: this.minuteStep}
+      const config = {start: 0, end: 59, step: this.minuteStep}
+      if (this.currentValue.Year === this.minDateMap.Year && this.currentValue.Month === this.minDateMap.Month && this.currentValue.Day === this.minDateMap.Day && this.currentValue.Hour === this.minDateMap.Hour) {
+        config.start = this.minDateMap.Minute
+      }
+      if (this.currentValue.Year === this.maxDateMap.Year && this.currentValue.Month === this.maxDateMap.Month && this.currentValue.Day === this.maxDateMap.Day && this.currentValue.Hour === this.maxDateMap.Hour) {
+        config.end = this.maxDateMap.Minute
+      }
+      return config
     },
     configs () {
       return {
@@ -73,10 +87,10 @@ export default {
       return dateUtil.format(date, this.format)
     },
     minDateMap () {
-      return this.strDate2DateMap(this.minDate, 'YYYY-MM-DD')
+      return this.strDate2DateMap(this.minDate, 'YYYY-MM-DD HH:mm')
     },
     maxDateMap () {
-      return this.strDate2DateMap(this.maxDate, 'YYYY-MM-DD')
+      return this.strDate2DateMap(this.maxDate, 'YYYY-MM-DD HH:mm')
     }
   },
   methods: {
