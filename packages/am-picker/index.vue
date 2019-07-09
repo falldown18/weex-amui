@@ -131,7 +131,7 @@ export default {
         case 'ok':
           this.selected = [...this.$refs.pickerView.selected]
           this.currentValue = [...this.$refs.pickerView.selectedValue]
-          this.$emit('ok', this.currentValue, this.lables)
+          this.$emit('ok', this.currentValue, this.lables, this.selected)
           this.close('ok')
           break
         case 'dismiss':
