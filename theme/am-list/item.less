@@ -4,12 +4,14 @@
 .am-list {
   &-item {
     position: relative;
-    padding-left: @h-spacing-lg;
+    // padding-left: @h-spacing-lg;
     // height: @list-item-height;
     // min-height: @list-item-height;
     background-color: @fill-base;
     flex-direction: row;
     align-items: center;
+    border-color: @border-color-base;
+    border-bottom-width: @border-width-sm;
     &-tap:active {
       background-color: @fill-tap;
     }
@@ -26,7 +28,7 @@
     flex-direction: row;
     align-items: center;
     flex: 1;
-    padding-right: @h-spacing-lg;
+    // padding-right: @h-spacing-lg;
     padding-top: 10 * @hd;
     padding-bottom: 9 * @hd;
     min-height: @list-item-height;
@@ -36,7 +38,7 @@
     // }
     &-border {
       border-bottom-color: @border-color-base;
-      border-bottom-width: @border-width-sm;
+      // border-bottom-width: @border-width-sm;
     }
     &-last {
       border-bottom-width: 0;
